@@ -1,0 +1,31 @@
+{
+  "subagent_configurations": [
+    {
+      "name": "research",
+      "description": "Read-only research agent for inspecting reference HTML snapshots, SVG paths, and style tokens.",
+      "tools": ["view_file", "grep_search", "list_dir"]
+    },
+    {
+      "name": "code-builder",
+      "description": "Primary coding agent for JSX component development, styling, and behavioral alignment.",
+      "tools": ["replace_file_content", "multi_replace_file_content", "write_to_file", "run_command"]
+    },
+    {
+      "name": "ui-auditor",
+      "description": "Visual parity evaluation subagent for auditing pixel-perfect design tokens, typography, and motion.",
+      "tools": ["view_file", "grep_search", "generate_image", "browser_subagent"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "pixel-perfect-cloner",
+      "description": "Agentic coding workflow for pixel-perfect UI cloning, design token extraction, and interaction matching.",
+      "path": ".agents/skills/pixel-perfect-cloner/SKILL.md"
+    },
+    {
+      "name": "antigravity-guide",
+      "description": "Agentic coding and visual parity evaluation skill set for exact UI cloning.",
+      "path": ".antigravity/skills/antigravity-guide/SKILL.md"
+    }
+  ]
+}

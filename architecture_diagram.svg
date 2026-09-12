@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" style="background-color: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF385C"/>
+      <stop offset="100%" stop-color="#E00B41"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#717171"/>
+    </marker>
+  </defs>
+
+  <!-- Title Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="url(#headerGrad)"/>
+  <text x="40" y="48" fill="#ffffff" font-size="24" font-weight="700" letter-spacing="0.5">Airbnb Listing Clone v3 - Modular System Architecture</text>
+  <text x="1160" y="48" fill="#ffffff" font-size="14" font-weight="500" text-anchor="end" opacity="0.9">React 19 + Vite + Clean Component Tree</text>
+
+  <!-- Client & Presentation Tier -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="120" width="1120" height="110" rx="12" fill="#ffffff" stroke="#e4e4e4" stroke-width="1.5"/>
+    <rect x="40" y="120" width="1120" height="32" rx="12" fill="#222222"/>
+    <rect x="40" y="140" width="1120" height="12" fill="#222222"/>
+    <text x="60" y="142" fill="#ffffff" font-size="14" font-weight="600">CLIENT &amp; PRESENTATION TIER (MODULAR REACT 19 SPA)</text>
+
+    <rect x="60" y="165" width="240" height="50" rx="8" fill="#fff5f6" stroke="#FF385C" stroke-width="1.5"/>
+    <text x="180" y="187" font-size="14" font-weight="600" fill="#222222" text-anchor="middle">React 19 + Vite 6</text>
+    <text x="180" y="204" font-size="11" fill="#717171" text-anchor="middle">Decoupled Domain Components</text>
+
+    <rect x="340" y="165" width="240" height="50" rx="8" fill="#f0f7ff" stroke="#0066cc" stroke-width="1.5"/>
+    <text x="460" y="187" font-size="14" font-weight="600" fill="#222222" text-anchor="middle">Pure CSS Tokens (`index.css`)</text>
+    <text x="460" y="204" font-size="11" fill="#717171" text-anchor="middle">Custom Theme Tokens &amp; Layouts</text>
+
+    <rect x="620" y="165" width="240" height="50" rx="8" fill="#f4fbf7" stroke="#12824c" stroke-width="1.5"/>
+    <text x="740" y="187" font-size="14" font-weight="600" fill="#222222" text-anchor="middle">SVG Icon Library (`lib/icons.jsx`)</text>
+    <text x="740" y="204" font-size="11" fill="#717171" text-anchor="middle">46 Sanitized SVG Icons</text>
+
+    <rect x="900" y="165" width="240" height="50" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="1020" y="187" font-size="14" font-weight="600" fill="#222222" text-anchor="middle">Overlay &amp; Scroll Locking</text>
+    <text x="1020" y="204" font-size="11" fill="#717171" text-anchor="middle">PhotoTour &amp; Lightbox Navigation</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="600" y1="230" x2="600" y2="270" stroke="#717171" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Application State & Data Layer -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="270" width="1120" height="80" rx="12" fill="#ffffff" stroke="#e4e4e4" stroke-width="1.5"/>
+    <text x="60" y="300" font-size="14" font-weight="700" fill="#222222">APPLICATION STATE &amp; DATA ISOLATION LAYER (`src/data/propertyData.js`)</text>
+    <text x="60" y="325" font-size="12" fill="#717171">Structured Listing Schema | 9 Photo Categories | 50+ Grouped Amenities | 19 Reviews | Host &amp; Co-Host Profiles</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="200" y1="350" x2="200" y2="390" stroke="#717171" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="460" y1="350" x2="460" y2="390" stroke="#717171" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="350" x2="740" y2="390" stroke="#717171" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1000" y1="350" x2="1000" y2="390" stroke="#717171" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Domain Component Architecture -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="390" width="1120" height="230" rx="12" fill="#ffffff" stroke="#e4e4e4" stroke-width="1.5"/>
+    <rect x="40" y="390" width="1120" height="32" rx="12" fill="#222222"/>
+    <rect x="40" y="410" width="1120" height="12" fill="#222222"/>
+    <text x="60" y="412" fill="#ffffff" font-size="14" font-weight="600">DOMAIN COMPONENT ARCHITECTURE (`src/components/`)</text>
+
+    <!-- Component 1 -->
+    <rect x="60" y="435" width="240" height="165" rx="8" fill="#fcfcfc" stroke="#dddddd" stroke-width="1.5"/>
+    <text x="80" y="460" font-size="14" font-weight="700" fill="#FF385C">Navigation &amp; Header</text>
+    <text x="80" y="482" font-size="12" fill="#484848">• `Header/Header.jsx`</text>
+    <text x="80" y="500" font-size="12" fill="#484848">• Sticky Subnav Bar</text>
+    <text x="80" y="518" font-size="12" fill="#484848">• Search Bar Segment</text>
+    <text x="80" y="536" font-size="12" fill="#484848">• Reserve CTA reveal</text>
+    <text x="80" y="575" font-size="11" fill="#717171">Scroll-aware sticky state</text>
+
+    <!-- Component 2 -->
+    <rect x="340" y="435" width="240" height="165" rx="8" fill="#fcfcfc" stroke="#dddddd" stroke-width="1.5"/>
+    <text x="360" y="460" font-size="14" font-weight="700" fill="#0066cc">Hero &amp; Photo Tour</text>
+    <text x="360" y="482" font-size="12" fill="#484848">• `Hero/HeroGrid.jsx`</text>
+    <text x="360" y="500" font-size="12" fill="#484848">• `PhotoTour/PhotoTourOverlay`</text>
+    <text x="360" y="518" font-size="12" fill="#484848">• `Lightbox/LightboxModal`</text>
+    <text x="360" y="536" font-size="12" fill="#484848">• Keyboard Controls (←/→/Esc)</text>
+    <text x="360" y="575" font-size="11" fill="#717171">Nested modal stack</text>
+
+    <!-- Component 3 -->
+    <rect x="620" y="435" width="240" height="165" rx="8" fill="#fcfcfc" stroke="#dddddd" stroke-width="1.5"/>
+    <text x="640" y="460" font-size="14" font-weight="700" fill="#12824c">Content &amp; Amenities</text>
+    <text x="640" y="482" font-size="12" fill="#484848">• `Overview/OverviewSection`</text>
+    <text x="640" y="500" font-size="12" fill="#484848">• `Amenities/AmenitiesSection`</text>
+    <text x="640" y="518" font-size="12" fill="#484848">• `AmenitiesModal.jsx`</text>
+    <text x="640" y="536" font-size="12" fill="#484848">• `Calendar/CalendarPicker`</text>
+    <text x="640" y="575" font-size="11" fill="#717171">Interactive date &amp; specs</text>
+
+    <!-- Component 4 -->
+    <rect x="900" y="435" width="240" height="165" rx="8" fill="#fcfcfc" stroke="#dddddd" stroke-width="1.5"/>
+    <text x="920" y="460" font-size="14" font-weight="700" fill="#8b5cf6">Reviews &amp; Host Info</text>
+    <text x="920" y="482" font-size="12" fill="#484848">• `Reviews/ReviewsSection`</text>
+    <text x="920" y="500" font-size="12" fill="#484848">• `Host/HostSection`</text>
+    <text x="920" y="518" font-size="12" fill="#484848">• `Location/LocationMap`</text>
+    <text x="920" y="536" font-size="12" fill="#484848">• `MoreStays/MoreStaysCarousel`</text>
+    <text x="920" y="575" font-size="11" fill="#717171">Interactive recommendations</text>
+  </g>
+
+  <!-- Connectors -->
+  <line x1="600" y1="620" x2="600" y2="660" stroke="#717171" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Production Deployment Tier -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="660" width="1120" height="180" rx="12" fill="#ffffff" stroke="#e4e4e4" stroke-width="1.5"/>
+    <rect x="40" y="660" width="1120" height="32" rx="12" fill="#222222"/>
+    <rect x="40" y="680" width="1120" height="12" fill="#222222"/>
+    <text x="60" y="682" fill="#ffffff" font-size="14" font-weight="600">PRODUCTION DEPLOYMENT TIER (VERCEL EDGE CDN)</text>
+
+    <rect x="60" y="705" width="340" height="115" rx="8" fill="#fcfcfc" stroke="#dddddd" stroke-width="1.5"/>
+    <text x="80" y="730" font-size="14" font-weight="700" fill="#222222">Build &amp; Bundle Optimization</text>
+    <text x="80" y="752" font-size="12" fill="#484848">• Vite 6 Rollup Bundler</text>
+    <text x="80" y="770" font-size="12" fill="#484848">• CSS purge &amp; minification</text>
+    <text x="80" y="788" font-size="12" fill="#484848">• Code-splitting &amp; gzipped JS</text>
+
+    <rect x="430" y="705" width="340" height="115" rx="8" fill="#fcfcfc" stroke="#dddddd" stroke-width="1.5"/>
+    <text x="450" y="730" font-size="14" font-weight="700" fill="#222222">Security &amp; Caching Headers</text>
+    <text x="450" y="752" font-size="12" fill="#484848">• Cache-Control: max-age=3600</text>
+    <text x="450" y="770" font-size="12" fill="#484848">• X-Content-Type-Options: nosniff</text>
+    <text x="450" y="788" font-size="12" fill="#484848">• X-Frame-Options: DENY</text>
+
+    <rect x="800" y="705" width="340" height="115" rx="8" fill="#fcfcfc" stroke="#dddddd" stroke-width="1.5"/>
+    <text x="820" y="730" font-size="14" font-weight="700" fill="#222222">Quality &amp; Lighthouse Targets</text>
+    <text x="820" y="752" font-size="12" fill="#484848">• Performance: 95+</text>
+    <text x="820" y="770" font-size="12" fill="#484848">• Accessibility: 95+</text>
+    <text x="820" y="788" font-size="12" fill="#484848">• Best Practices: 95+</text>
+  </g>
+</svg>
