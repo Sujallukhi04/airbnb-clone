@@ -2,6 +2,7 @@
 
 **Project:** Airbnb Listing Clone v3 — Modern Standalone App  
 **AI Assistant:** Antigravity (Google DeepMind)  
+**Live Production URL:** [https://airbnb-clone-two-pearl-84.vercel.app/](https://airbnb-clone-two-pearl-84.vercel.app/)  
 **Date:** September 2026  
 **Status:** Production-Ready
 
